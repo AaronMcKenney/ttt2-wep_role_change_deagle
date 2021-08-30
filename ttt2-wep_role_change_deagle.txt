@@ -1,0 +1,24 @@
+[URL=https://steamcommunity.com/sharedfiles/filedetails/?id=1357204556]TTT2[/URL] Required
+ 
+Source: [url=https://github.com/AaronMcKenney/ttt2-wep_role_change_deagle][/url]
+ 
+The Role Change Deagle is a weapon purchasable by the Detective. It might change the role of anyone it hits, as long as doing so wouldn't change their team. For example, if it is used on an Innocent player, that player's role may change to a Pharaoh, Survivalist, Occultist, or there is a slight chance that it won't change at all. If it is used on a Traitor, that player may become a Mesmerist, Glutton, or remain as a Traitor. If it hits a Marker, nothing will happen, for the Marker is currently the only role that is on Team Marker (The same logic applies for Jesters, Infected, etc.).
+ 
+The Role Change Deagle will only consider roles that your server has installed. It will not change a player's role to a Priest if the server does not have that role.
+ 
+The Role Change Deagle is somewhat smart, and will not change a player's role to a "secondary role" such as the Graverobber or the Sidekick. It also cannot promote an Innocent into a Detective role (as that would be seriously broken). It can however, be used on a fellow Detective to change them into a different Detective role (ex. changing a Banker into a Sheriff).
+ 
+A Detective may wish to use this weapon to empower their generic Innocent teammates. They must be careful however, as using this weapon without forethought could do the opposite, waste ammo, or cause undesired chaos.
+ 
+[h1]Role Change Deagle ConVars (also found in ULX):[/h1]
+[code]# How many seconds should it take for the Role Change Deagle to refill if it fails (<=0 to not refill at all)?
+  ttt2_role_change_deagle_refill_time [0..n] (default: 15)
+# How much ammo should the Role Change Deagle have?
+  ttt2_role_change_deagle_ammo [0..n] (default: 3)
+# Can the Role Change Deagle be used multiple times on the same player in a round?
+  ttt2_role_change_allow_same [0/1] (default: 0)[/code]
+ 
+--
+[h1]Credits:[/h1]
+[URL=https://steamcommunity.com/profiles/76561198025772353/]BlackMagicFine[/URL]: creator of this role addon
+Thumbnail uses various icons created by the TTT2 devs.

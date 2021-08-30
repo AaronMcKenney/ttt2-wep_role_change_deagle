@@ -1,0 +1,12 @@
+{
+	"title"		:	"[TTT2] Role Change Deagle",
+	"type"		:	"ServerContent",
+    "tags"		:	[ "roleplay", "fun" ],
+    "ignore"    : [
+        ".git/*",
+        ".gitignore",
+        "README.md",
+        "ttt2-wep_role_change_deagle.jpg",
+        "ttt2-wep_role_change_deagle.txt"
+    ]
+}
