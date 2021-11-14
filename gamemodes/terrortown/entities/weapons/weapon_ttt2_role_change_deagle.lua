@@ -145,9 +145,10 @@ local function AssignNewRole(ply)
 	local viable_role_list = {}
 	for i = 1, #role_data_list do
 		local role_data = role_data_list[i]
-		if role_data.notSelectable or role_data.index == ROLE_NONE then
+		if role_data.notSelectable or role_data.index == ROLE_NONE or (ROLE_DEFECTIVE and role_data.index == ROLE_DEFECTIVE) then
 			--notSelectable is true for roles spawned under special circumstances, such as the Ravenous or the Graverobber.
 			--ROLE_NONE should not be messed with. It would be mildly funny if it were selectable, but would probably bug out the server.
+			--Defective should not be selectable, as it will reveal the traitor (since normal innocents can't become detectives via this weapon)
 			continue
 		end
 		
